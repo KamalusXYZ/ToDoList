@@ -1,0 +1,223 @@
+/***************************************************
+GLOBAL
+***************************************************/
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightblue;
+    
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+nav, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: red; /* éventuellement plus tard changer en inherit pour appliquer les propriétés de son parent*/
+}
+
+.titre{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+/***************************************************
+STRUCTURE
+***************************************************/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flexleft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.page{
+
+    width: 1200px;
+    margin: 0px auto;
+    position: relative;
+    background-color: white;
+    min-height: 500px;
+    border: 2px solid #373737;
+    border-radius: 12px;
+
+}
+
+.tache{
+
+    width: 250px;
+    background-color: lemonchiffon;
+    height: 250px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 0 50px 0 0;
+    padding: 10px;
+    position: relative;
+    font-size: 22px;
+    word-break: break-all;
+ 
+}
+.tachevert{
+
+    width: 250px;
+    background-color: green;
+    height: 250px;
+    margin: 5px;
+ 
+}
+.tacherouge{
+
+    width: 250px;
+    background-color: red;
+    height: 250px;
+    margin: 5px;
+ 
+}
+
+.prioritaire{
+
+    order: -1
+
+}
+
+.corbeille img{
+
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.3s ease;
+
+
+}
+.corbeille img:hover{
+
+    width: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+.conteneur{
+
+    width: 70%;
+    padding: 25px;
+    min-height: 500px;
+}
+
+.laterale{
+
+    width: 28%;
+    border-left: 1px solid #373737;
+    min-height: 500px;
+    padding: 25px;
+    text-align: center;
+}
+
+
+#ajouter{
+    background-color: skyblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 150px;
+    transition: all ease 0.5s;
+}
+
+#ajouter:hover{
+
+    cursor: pointer;
+    background-color: rgb(6, 37, 49);
+    color: white;
+}
+
+.message{
+
+    background-color: rgba(135, 207, 235, 0.541);
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 100%;
+    height: 385px;
+    
+
+
+}
+
+#envoyertache{
+
+    padding: 10px;
+    background-color: skyblue;
+    border: 2px solid #373737;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+#envoyertache:hover{
+
+    padding: 10px;
+    background-color: #373737;
+    color: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+   
+
+}
+
+
+
+#tachetexte{
+
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: lowercase;
+  
+}
+
+.Urgence{
+
+    margin: 15px;
+    
+    text-transform: uppercase;
+    color: darkred;
+    font-size: 14px;
+}
